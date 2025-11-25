@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yummy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="icon" href="./images/icon.png" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/media.css" />
+</head>
+
+<body class="bg-black">
+
+  <div id="loaderContainer"
+    class="bg-black w-100 h-100 position-fixed top-0 start-0 d-flex justify-content-center align-items-center d-none"
+    style="z-index: 2000;">
+    <span class="loader"></span>
+  </div>
+
+
+  <nav>
+    <div
+      class="myside top-0 start-0 bottom-0 bg-white vh-100 d-flex flex-column justify-content-between py-4 align-items-center position-fixed">
+      <img src="./images/icon.png" class="logo" alt="logo-icon" />
+      <button class="text-black fs-2 btn" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="d-flex flex-column justify-content-around align-items-center">
+        <a href="#"><i class="fa-solid fa-globe text-black"></i></a><a href="#"><i
+            class="fa-solid fa-share-nodes text-black"></i></a>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+      id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column align-items-center justify-content-between">
+        <div class="d-flex flex-column align-items-center">
+          <button class="btn" id="button1">Search</button>
+          <button class="btn" id="button2">Categories</button>
+          <button class="btn" id="button3">Area</button>
+          <button class="btn" id="button4">Ingredients</button>
+          <button class="btn" id="button5">Contact Us</button>
+        </div>
+        <div class="d-flex flex-column ">
+          <div>
+            <a href="https://www.facebook.com/"><i class="fa-brands text-black fa-facebook"></i></a>
+            <a href="https://x.com/"><i class="fa-brands text-black fa-twitter"></i></a>
+            <a href="#"><i class="fa-solid text-black fa-globe"></i></a>
+          </div>
+          <p class="text-black">Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container text-center pt-5">
+    <div class="row g-2"></div>
+  </div>
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
