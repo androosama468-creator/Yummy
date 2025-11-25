@@ -1,14 +1,5 @@
 const row = document.querySelector(".row");
 
-// function showLoader() {
-//   row.innerHTML = `
-//         <div class="col-12 text-center text-white my-5">
-//             <div class="spinner-border text-white" role="status">
-//             </div>
-//             <p>Loading...</p>
-//         </div>
-//     `;
-// }
 function showLoader() {
   document.getElementById("loaderContainer").classList.remove("d-none");
 }
